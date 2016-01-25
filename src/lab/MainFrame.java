@@ -38,8 +38,14 @@ public class MainFrame {
 		panel.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
-				if(panel.isStarted()) panel.stop();
-				else panel.start();
+				if(panel.isStarted()) {
+					panel.stop();
+					System.out.println("Program wstrzymany.");
+				}
+				else {
+					panel.start();
+					System.out.println("Program wznowiony.");
+				}
 			}
 		});
 		frame.getContentPane().add(panel, BorderLayout.CENTER);
