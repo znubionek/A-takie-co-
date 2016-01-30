@@ -31,12 +31,12 @@ public class Canvas extends JPanel implements Runnable {
 		g2bi.dispose();
 		Graphics2D g2 = (Graphics2D) g;
 		g2.drawImage(bi, 0, 0, this);
-	}
+	}//gasgaahahashsahashsdh
 	public void start() {
 		start = true;
 		Thread thread = new Thread(this);
 		thread.start();
-	}
+	}//zmian zmiana zmiana
 	@Override
 	public void run() {
 		while (start) {

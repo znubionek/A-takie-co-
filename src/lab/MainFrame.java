@@ -36,6 +36,8 @@ public class MainFrame {
 		frame.setTitle("Układ Słoneczny");
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Układ Słoneczny");
+		frame.setBounds(100, 100, 450, 300);
 		Canvas panel = new Canvas(800, 800);
 		panel.addMouseListener(new MouseAdapter() {
 			@Override
